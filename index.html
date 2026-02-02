@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romina Cutipa - Entrenamiento Personal de Tennis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <div class="flex items-center animate-slideInLeft">
+                <div class="bg-primary p-2 rounded-lg">
+                    <i class="fa-solid fa-trophy text-white text-2xl"></i>
+                </div>
+                <h1 class="ml-3 text-xl font-bold text-secondary">Romina Cutipa Tennis Academy</h1>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 animate-fadeIn">
+                <a href="#inicio" class="text-secondary hover:text-primary font-medium transition duration-300">Inicio</a>
+                <a href="#sobre-mi" class="text-secondary hover:text-primary font-medium transition duration-300">Sobre Mí</a>
+                <a href="#servicios" class="text-secondary hover:text-primary font-medium transition duration-300">Servicios</a>
+                <a href="#testimonios" class="text-secondary hover:text-primary font-medium transition duration-300">Testimonios</a>
+                <a href="#galeria" class="text-secondary hover:text-primary font-medium transition duration-300">Galería</a>
+                <a href="#contacto" class="text-secondary hover:text-primary font-medium transition duration-300">Contacto</a>
+            </nav>
+            
+            <a href="#reservar" class="btn-primary bg-accent text-secondary px-6 py-2.5 rounded-lg font-semibold hover:bg-yellow-500 transition animate-slideInRight">
+                Reservar Sesión
+            </a>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp button -->
+    <a id="floatingWhatsApp" href="https://api.whatsapp.com/send/?phone=51993304853&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg z-50">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 bg-gradient-to-br from-primary via-green-600 to-green-700 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 right-20 w-72 h-72 bg-white opacity-5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-20 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="text-white">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight animate-fadeInUp">
+                    Domina Tu Juego con <span class="text-accent">Entrenamiento Profesional</span>
+                </h1>
+                <p class="text-xl mb-8 text-green-50 animate-fadeInUp delay-100">
+                    Entrenamiento personalizado de tenis para todos los niveles. Transforma tus habilidades con sesiones diseñadas específicamente para ti.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-fadeInUp delay-200">
+                    <a href="#reservar" class="btn-primary bg-accent text-secondary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition text-center">
+                        <i class="fa-solid fa-calendar-check mr-2"></i>Reserva Tu Sesión
+                    </a>
+                    <a href="#sobre-mi" class="bg-white/20 backdrop-blur text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/30 transition border-2 border-white/40 text-center">
+                        Conocer Más
+                    </a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-12 animate-fadeInUp delay-300">
+                    <div class="text-center">
+                        <div class="stat-number text-accent">15+</div>
+                        <p class="text-green-100">Años Experiencia</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number text-accent">500+</div>
+                        <p class="text-green-100">Estudiantes</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number text-accent">98%</div>
+                        <p class="text-green-100">Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="h-[600px] overflow-hidden rounded-2xl shadow-2xl animate-fadeInUp delay-200">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&h=1000&fit=crop" alt="Coach de tenis profesional">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Tu Coach de Confianza</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="h-[600px] overflow-hidden rounded-2xl shadow-2xl">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1714802064588-39d1065269cf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coach profesional de tenis">
+                </div>
+                
+                <div>
+                    <h3 class="text-4xl font-bold text-secondary mb-6">
+                        Más de 15 Años Transformando Jugadores
+                    </h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Con más de 15 años de experiencia como entrenador profesional, he ayudado a cientos de estudiantes a alcanzar sus metas en el tenis, desde principiantes absolutos dando su primer golpe hasta jugadores competitivos ganando torneos.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-certificate text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-xl mb-1">Certificación USPTA</h4>
+                                <p class="text-gray-600">Profesional certificado por la United States Professional Tennis Association</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-trophy text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-xl mb-1">Ex-Jugador Competitivo</h4>
+                                <p class="text-gray-600">Competí en torneos de nivel nacional y conozco el juego desde dentro</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-users text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-xl mb-1">500+ Estudiantes Entrenados</h4>
+                                <p class="text-gray-600">Todas las edades y niveles, desde niños hasta adultos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="border-l-4 border-accent pl-6 py-4 bg-white rounded-r-xl shadow-md">
+                        <p class="italic text-gray-700 text-lg mb-2">
+                            "Mi filosofía es simple: cada jugador es único y cada sesión debe adaptarse para ayudarte a alcanzar tu mejor versión. Ya sea que estés tomando una raqueta por primera vez o perfeccionando tu ventaja competitiva, estoy aquí para guiarte en cada paso del camino."
+                        </p>
+                        <cite class="text-primary font-semibold">— Coach Elite</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Paquetes de Entrenamiento</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Elige el paquete que mejor se adapte a tu disponibilidad y objetivos
+                </p>
+            </div>
+
+            <!-- What's Included Banner -->
+<div class="bg-gradient-to-r from-primary/5 to-green-50 rounded-2xl p-8 mb-12 border-2 border-primary/20">
+    <h3 class="text-2xl font-bold text-secondary mb-6 text-center">
+        <i class="fa-solid fa-gift text-primary mr-2"></i>
+        Todos los Paquetes Incluyen
+    </h3>
+
+    <div class="grid md:grid-cols-5 gap-6">
+
+        <!-- Entrada -->
+        <div class="text-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fa-solid fa-door-open text-primary text-2xl"></i>
+            </div>
+            <p class="font-semibold text-secondary">Entrada al Lugar</p>
+        </div>
+
+        <!-- Cancha -->
+        <div class="text-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fa-solid fa-layer-group text-primary text-2xl"></i>
+            </div>
+            <p class="font-semibold text-secondary">Costo de Cancha</p>
+        </div>
+
+        <!-- Raqueta -->
+        <div class="text-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fa-solid fa-table-tennis-paddle-ball text-primary text-2xl"></i>
+            </div>
+            <p class="font-semibold text-secondary">Raqueta Prestada</p>
+        </div>
+
+        <!-- Pelotas -->
+        <div class="text-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fa-solid fa-baseball text-primary text-2xl"></i>
+            </div>
+            <p class="font-semibold text-secondary">Pelotas</p>
+        </div>
+
+        <!-- Coaching -->
+        <div class="text-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                <i class="fa-solid fa-user-graduate text-primary text-2xl"></i>
+            </div>
+            <p class="font-semibold text-secondary">Coaching A1</p>
+        </div>
+
+    </div>
+</div>
+
+            
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Paquete Starter -->
+                <div class="service-card bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary relative">
+                    <div class="text-center mb-6">
+                        <div class="bg-gradient-to-br from-gray-100 to-gray-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fa-solid fa-star text-gray-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Paquete Starter</h3>
+                        <p class="text-gray-600">Ideal para comenzar</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                        <div class="text-center mb-4">
+                            <div class="text-5xl font-extrabold text-primary mb-2">S/ 350</div>
+                            <p class="text-gray-600 font-medium">Pago único</p>
+                        </div>
+                        <div class="border-t-2 border-gray-200 pt-4">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-2xl font-bold text-secondary">12 horas</span>
+                            </div>
+                            <p class="text-center text-gray-600">8 clases de 1.5 hora</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span><strong>S/ 43.75</strong> por clase de 1.5h</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Perfecto para probar el tenis</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>2 meses de entrenamiento (1 clase/semana)</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#reservar" class="block w-full bg-gray-100 text-secondary text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                        Seleccionar Paquete
+                    </a>
+                </div>
+
+                <!-- Paquete Plus - POPULAR -->
+                <div class="service-card bg-white border-2 border-primary rounded-2xl p-8 relative transform md:scale-105 shadow-xl">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-accent text-secondary px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                            <i class="fa-solid fa-fire mr-1"></i> MÁS POPULAR
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6 mt-4">
+                        <div class="bg-gradient-to-br from-primary to-green-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fa-solid fa-crown text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Paquete Plus</h3>
+                        <p class="text-gray-600">El favorito de todos</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-primary/5 to-green-50 rounded-xl p-6 mb-6 border border-primary/20">
+                        <div class="text-center mb-4">
+                            <div class="text-5xl font-extrabold text-primary mb-2">S/ 500</div>
+                            <p class="text-primary font-semibold">¡Ahorra S/ 25!</p>
+                        </div>
+                        <div class="border-t-2 border-primary/20 pt-4">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-2xl font-bold text-secondary">18 horas</span>
+                            </div>
+                            <p class="text-center text-gray-700">12 clases de 1.5 hora</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span><strong>S/ 41.67</strong> por clase de 1.5h</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Mejor relación calidad-precio</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>3 meses de entrenamiento continuo</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Resultados garantizados</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#reservar" class="block w-full bg-accent text-secondary text-center py-3 rounded-lg font-semibold hover:bg-yellow-500 transition shadow-md">
+                        Seleccionar Paquete
+                    </a>
+                </div>
+
+                <!-- Paquete Pro -->
+                <div class="service-card bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary relative">
+                    <div class="text-center mb-6">
+                        <div class="bg-gradient-to-br from-amber-400 to-yellow-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fa-solid fa-trophy text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Paquete Pro</h3>
+                        <p class="text-gray-600">Máximo rendimiento</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-6 mb-6 border border-amber-200">
+                        <div class="text-center mb-4">
+                            <div class="text-5xl font-extrabold text-primary mb-2">S/ 625</div>
+                            <p class="text-amber-700 font-semibold">¡Ahorra S/ 75!</p>
+                        </div>
+                        <div class="border-t-2 border-amber-200 pt-4">
+                            <div class="flex items-center justify-center gap-2 mb-2">
+                                <i class="fa-solid fa-clock text-primary"></i>
+                                <span class="text-2xl font-bold text-secondary">24 horas</span>
+                            </div>
+                            <p class="text-center text-gray-700">16 clases de 1.5 hora</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span><strong>S/ 39.06</strong> por clase de 1.5h</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Máximo ahorro y compromiso</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>4 meses de transformación total</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fa-solid fa-check-circle text-primary mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Ideal para jugadores serios</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#reservar" class="block w-full bg-gradient-to-r from-amber-400 to-yellow-500 text-white text-center py-3 rounded-lg font-semibold hover:from-amber-500 hover:to-yellow-600 transition shadow-md">
+                        Seleccionar Paquete
+                    </a>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-secondary text-center mb-8">Comparación de Paquetes</h3>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-100">
+                    <table class="w-full">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left">Características</th>
+                                <th class="px-6 py-4 text-center">Starter</th>
+                                <th class="px-6 py-4 text-center bg-green-700">Plus</th>
+                                <th class="px-6 py-4 text-center">Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-secondary">Total de Horas</td>
+                                <td class="px-6 py-4 text-center">12 horas</td>
+                                <td class="px-6 py-4 text-center bg-green-50 font-semibold">18 horas</td>
+                                <td class="px-6 py-4 text-center">24 horas</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-secondary">Número de Clases</td>
+                                <td class="px-6 py-4 text-center">8 clases</td>
+                                <td class="px-6 py-4 text-center bg-green-50 font-semibold">12 clases</td>
+                                <td class="px-6 py-4 text-center">16 clases</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-secondary">Precio Total</td>
+                                <td class="px-6 py-4 text-center">S/ 350</td>
+                                <td class="px-6 py-4 text-center bg-green-50 font-semibold">S/ 500</td>
+                                <td class="px-6 py-4 text-center">S/ 625</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-secondary">Precio por Clase</td>
+                                <td class="px-6 py-4 text-center">S/ 43.75</td>
+                                <td class="px-6 py-4 text-center bg-green-50 font-semibold text-primary">S/ 41.67</td>
+                                <td class="px-6 py-4 text-center text-primary font-bold">S/ 39.06</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-secondary">Ahorro</td>
+                                <td class="px-6 py-4 text-center">—</td>
+                                <td class="px-6 py-4 text-center bg-green-50 font-semibold text-primary">S/ 25</td>
+                                <td class="px-6 py-4 text-center text-primary font-bold">S/ 75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Payment Info -->
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 text-lg mb-4">
+                    <i class="fa-solid fa-info-circle text-primary mr-2"></i>
+                    Todos los precios son en Soles Peruanos (PEN)
+                </p>
+                <p class="text-gray-500">
+                    <i class="fa-solid fa-credit-card mr-2"></i>
+                    Aceptamos efectivo, transferencias bancarias y tarjetas de crédito/débito
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="reservar" class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Agenda Tu Sesión</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">
+                    Completa el formulario y te contactaré en las próximas 24 horas para confirmar tu sesión
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <form id="bookingForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Nombre Completo *</label>
+                            <input type="text" id="bookingName" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="Juan Pérez">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Email *</label>
+                            <input type="email" id="bookingEmail" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="juan@ejemplo.com">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Teléfono *</label>
+                            <input type="tel" id="bookingPhone" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Paquete de Entrenamiento *</label>
+                            <select id="bookingType" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition">
+                                <option>Starter</option>
+                                <option>Plus</option>
+                                <option>Pro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Fecha Preferida *</label>
+                            <input type="date" id="bookingDate" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Horario Preferido *</label>
+                            <select id="bookingTime" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition">
+                                <option>Mañana (8AM - 12PM)</option>
+                                <option>Tarde (12PM - 4PM)</option>
+                                <option>Noche (4PM - 8PM)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-secondary font-semibold mb-2">Notas Adicionales</label>
+                        <textarea rows="4" id="bookingNotes" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="Cuéntame sobre tus objetivos, experiencia o áreas específicas en las que te gustaría trabajar..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-accent text-secondary py-4 rounded-lg font-bold text-lg hover:bg-yellow-500 transition shadow-lg hover:shadow-xl">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>Reservar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Lo Que Dicen Mis Estudiantes</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">Historias de jugadores que han transformado su juego</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "¡El mejor entrenador de tenis que he tenido! En solo 3 meses, mi servicio mejoró dramáticamente y gané mi primer torneo local. La atención personalizada es invaluable."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Michael Chen" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">Michael Chen</h4>
+                            <p class="text-sm text-gray-500">Jugador Intermedio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "¡Mi hija de 10 años ama sus clases de tenis! El coach lo hace divertido mientras enseña la técnica adecuada. ¡Ahora pide practicar todos los días!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Sarah Johnson" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">Madre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "Comencé como principiante absoluta y ahora juego en una liga local. La paciencia y la instrucción clara me ayudaron a construir confianza y realmente disfrutar el deporte."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Emily Rodriguez" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">Emily Rodríguez</h4>
+                            <p class="text-sm text-gray-500">Principiante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "Las sesiones grupales son fantásticas. Gran valor y he hecho amigos mientras mejoro mi juego. Los ejercicios competitivos me impulsan a mejorar cada semana."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="David Thompson" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">David Thompson</h4>
+                            <p class="text-sm text-gray-500">Sesiones Grupales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "Profesional, conocedor y genuinamente preocupado por mi progreso. Las sesiones de análisis en video han sido reveladoras para corregir mi técnica de revés."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=25" alt="Lisa Anderson" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">Lisa Anderson</h4>
+                            <p class="text-sm text-gray-500">Jugadora Avanzada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4 text-accent">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic leading-relaxed">
+                        "Llevó mi juego competitivo al siguiente nivel. El coaching mental y las sesiones de estrategia me ayudaron a ganar mi campeonato regional. ¡Altamente recomendado!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?img=51" alt="James Wilson" class="w-14 h-14 rounded-full mr-4 border-2 border-primary">
+                        <div>
+                            <h4 class="font-bold text-secondary">James Wilson</h4>
+                            <p class="text-sm text-gray-500">Jugador Competitivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Entrenamiento en Acción</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">Mira nuestras sesiones de entrenamiento e historias de éxito</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=400&h=400&fit=crop" alt="Entrenamiento de tenis">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Técnica de Forehand</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?w=400&h=400&fit=crop" alt="Entrenamiento infantil">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Programa Infantil</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&h=400&fit=crop" alt="Servicio profesional">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Práctica de Servicio</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1767019351127-1e49d62407f2?q=80&w=687&auto=format&fit=crop" alt="Análisis técnico">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Análisis Técnico</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1660463528352-50e6f0693e95?q=80&w=735&auto=format&fit=crop" alt="Volea en red">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Volea en Red</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1660463531159-eac6af0d7c6c?q=80&w=1074&auto=format&fit=crop" alt="Celebración">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">¡Victoria!</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1725680647573-9737175af6c4?q=80&w=1170&auto=format&fit=crop" alt="Demostración de servicio">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Instrucción Detallada</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-64 overflow-hidden rounded-xl shadow-md">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1634840542403-1a9b1067aaa0?q=80&w=1074&auto=format&fit=crop" alt="Sesión grupal">
+                    <div class="gallery-overlay">
+                        <p class="text-white font-semibold">Sesión Grupal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-24 bg-gradient-to-r from-primary via-green-600 to-green-700 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-6 text-center text-white relative z-10">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6">
+                ¿Listo Para Elevar Tu Juego de Tenis?
+            </h2>
+            <p class="text-xl md:text-2xl mb-10 text-green-50 max-w-3xl mx-auto">
+                Únete a cientos de estudiantes satisfechos y comienza tu viaje en el tenis hoy. ¡La primera sesión incluye una evaluación de habilidades gratuita!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#reservar" class="btn-primary bg-accent text-secondary px-10 py-5 rounded-lg font-bold text-lg hover:bg-yellow-500 transition shadow-xl">
+                    <i class="fa-solid fa-calendar-check mr-2"></i>Reserva Tu Primera Sesión
+                </a>
+                <a href="tel:+15551234567" class="bg-white/20 backdrop-blur text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/30 transition border-2 border-white/40">
+                    <i class="fa-solid fa-phone mr-2"></i>Llama Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-secondary mb-4">Ponte en Contacto</h2>
+                <div class="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600">
+                    ¿Tienes preguntas? Contáctame y hablemos sobre cómo puedo ayudarte a alcanzar tus metas
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-bold text-secondary mb-8">Información de Contacto</h3>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-4 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-phone text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg mb-1">Teléfono</h4>
+                                <p class="text-gray-600 text-lg">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-4 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg mb-1">Email</h4>
+                                <p class="text-gray-600 text-lg">coach@elitetennis.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-4 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg mb-1">Ubicación</h4>
+                                <p class="text-gray-600 text-lg">Club de Tenis Riverside<br>123 Court Avenue, Ciudad, ST 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-4 rounded-xl mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-clock text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg mb-1">Horario</h4>
+                                <p class="text-gray-600 text-lg">
+                                    Lunes - Viernes: 8AM - 8PM<br>
+                                    Sábado - Domingo: 9AM - 6PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-secondary text-xl mb-4">Sígueme en Redes</h4>
+                        <div class="flex gap-4">
+                            <!--
+                            <a href="#" class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition text-primary">
+                                <i class="fa-brands fa-facebook text-2xl"></i>
+                            </a>
+                            -->
+                            <a href="https://www.instagram.com/rominacutipa_tennisacademy/" target="_blank" class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition text-primary">
+                                <i class="fa-brands fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@rominacutipatennis" target="_blank" class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition text-primary">
+                                <i class="fa-brands fa-tiktok text-2xl"></i>
+                            </a>
+                            <a href="#" class="bg-primary/10 w-14 h-14 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition text-primary">
+                                <i class="fa-brands fa-youtube text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-lg">
+                    <h3 class="text-3xl font-bold text-secondary mb-6">Envía un Mensaje</h3>
+                    <form id="contactForm" class="space-y-5">
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Nombre</label>
+                            <input type="text" id="contactName" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Email</label>
+                            <input type="email" id="contactEmail" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Asunto</label>
+                            <input type="text" id="contactSubject" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="¿De qué se trata?">
+                        </div>
+                        <div>
+                            <label class="block text-secondary font-semibold mb-2">Mensaje</label>
+                            <textarea rows="5" id="contactMessage" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg transition" placeholder="Tu mensaje..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-secondary py-4 rounded-lg font-bold text-lg hover:bg-yellow-500 transition shadow-lg">
+                            <i class="fa-brands fa-whatsapp mr-2"></i>Enviar por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- html -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary p-2 rounded-lg">
+                            <i class="fa-solid fa-trophy text-white text-2xl"></i>
+                        </div>
+                        <h3 class="ml-3 text-2xl font-bold">Romina Cutipa Tennis Academy</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Entrenamiento personalizado de tenis para todos los niveles. Reserva por WhatsApp o completa el formulario.
+                    </p>
+
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-accent transition">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="hover:text-accent transition">Sobre Mí</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition">Servicios</a></li>
+                        <li><a href="#reservar" class="hover:text-accent transition">Reservar</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-3">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Clases Privadas</li>
+                        <li>Sesiones Grupales</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-3">Contacto</h4>
+                    <ul class="text-gray-400 space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-accent"></i>
+                            <a href="tel:+51993304853" class="hover:text-accent transition">+51 993 304 853</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-accent"></i>
+                            <a href="mailto:coach@elitetennis.com" class="hover:text-accent transition">coach@elitetennis.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-accent mt-1"></i>
+                            <span>Club de Tenis Riverside, 123 Court Avenue, Ciudad</span>
+                        </li>
+                    </ul>
+
+                    <div class="flex gap-3 mt-4">
+                        <a href="https://www.instagram.com/rominacutipa_tennisacademy/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@rominacutipatennis" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=51993304853&text=Hola%20Romina%2C%20quiero%20más%20info%20sobre%20reservas." target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-gray-300 text-sm">© 2024 Coach Elite. Todos los derechos reservados.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-gray-300 hover:text-accent text-sm transition">Política de Privacidad</a>
+                    <span class="hidden md:inline-block text-gray-400">|</span>
+                    <a href="#" class="text-gray-300 hover:text-accent text-sm transition">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
